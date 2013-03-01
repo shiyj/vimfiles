@@ -29,6 +29,8 @@ set whichwrap+=<,>,h,l
 "在输入命令时列出匹配项目，也就是截图底部的效果
 set wildmenu
 set nocindent
+"万能补齐
+filetype plugin on
 "打开自动缩,继承前一行的缩进方式，特别适用于多行注释 进
 " set autoindent
 "默认情况下手动折叠
@@ -53,6 +55,8 @@ set novisualbell
 "正确地处理中文字符的折行和拼接
 set formatoptions+=mM
 "文件 UTF-8 编码
-set fileencodings=utf-8
+set fileencodings=utf-8,gb18030,gbk,gb2312,cp936
 
-
+"taglist
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1

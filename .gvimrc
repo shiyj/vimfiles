@@ -70,7 +70,7 @@ set novisualbell
 "正确地处理中文字符的折行和拼接
 set formatoptions+=mM
 "文件 UTF-8 编码
-set fileencodings=utf-8
+"set fileencodings=utf-8
 "设置文件格式为unix
 set fileformat=unix
 "开启命令显示
@@ -128,7 +128,8 @@ nmap <silent> <F7> :NERDTreeToggle<CR>
 imap <silent> <C-b> <esc>:BufExplorer<CR>
 nmap <silent> <C-b> :BufExplorer<CR>
 " }}}
-
+"Taglist quick launch
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 " CTRL-C  are Copy
 vnoremap <C-C> "+y
@@ -151,7 +152,8 @@ nmap <silent> <C-up> <C-W><up>
 imap <silent> <C-down> <esc><C-W><down>
 vmap <silent> <C-down> <esc><C-W><down>
 nmap <silent> <C-down> <C-W><down>
-
+" CTAGS
+map <C-F7> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR> 
 " delete hack
 nmap <silent> <del> "_x
 vmap <silent> <del> "_x
