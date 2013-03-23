@@ -132,11 +132,11 @@ nmap <silent> <C-b> :BufExplorer<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 " CTRL-C  are Copy
-vnoremap <C-C> "+y
+"vnoremap <C-C> "+y
 " CTRL-V are Paste
-map <C-V>	"+gP
-cmap <C-V> <C-R>+
-imap <C-V> <C-R>+
+"map <C-V>	"+gP
+"cmap <C-V> <C-R>+
+"imap <C-V> <C-R>+
 
 
 " 窗口区域切换,Ctrl+↑↓←→  来切换
